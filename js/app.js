@@ -24,6 +24,10 @@ require.config({
   }
 });
 
+require(['parse'], function(Parse) {
+  Parse.initialize("APPLICATION_ID", "JAVASCRIPT_KEY");
+});
+
 
 // Load the main app module to start the app
 requirejs(["main"]);
